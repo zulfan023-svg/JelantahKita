@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JelantahKita — Ubah Jelantah, Ciptakan Nilai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box;margin:0;padding:0}
+body{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-behavior:smooth}body{font-family:'Poppins',sans-serif;color:#123d2c;background:#fbf7ed;line-height:1.6}a{text-decoration:none;color:inherit}.navbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:25px;padding:15px 6%;background:rgba(251,247,237,.97);border-bottom:1px solid #e8dfcd}.brand{font-size:21px;font-weight:800;white-space:nowrap}nav{display:flex;gap:20px;align-items:center;justify-content:center;flex:1}nav a{font-size:12px;font-weight:600;color:#315746}nav a:hover{color:#dca623}.nav-button,.button{display:inline-block;border-radius:12px;padding:12px 20px;font-weight:700;font-size:13px}.nav-button,.primary{background:#14553d;color:white}.secondary{border:1px solid #18563e;color:#14553d}.yellow{background:#f1c23b;color:#183d2e}.section{padding:90px 8%;max-width:1400px;margin:auto}.light{background:#f3eee2;max-width:none}.light>*{max-width:1180px;margin-left:auto;margin-right:auto}.hero{min-height:650px;display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:#8d6b1c;margin-bottom:12px}h1{font-size:62px;line-height:1.05;letter-spacing:-2px;margin-bottom:22px}h1 span{color:#dda620}h2{font-size:42px;line-height:1.12;letter-spacing:-1px;margin-bottom:18px}.hero-text,.split p,.center>p{max-width:650px;color:#59675e;font-size:16px}.actions{display:flex;gap:12px;margin:28px 0}.stats{display:flex;gap:35px;margin-top:30px}.stats div{display:flex;flex-direction:column}.stats strong{font-size:27px;color:#14553d}.stats small{font-size:10px;line-height:1.35}.stats em{color:#a08034;font-style:normal}.hero-art{min-height:500px;border-radius:34px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#d9ead6,#d0b36d)}.station-card{width:280px;height:400px;background:#f7f2e7;border-radius:22px;padding:20px;box-shadow:0 20px 45px #6c66433d;text-align:center;border:5px solid #14553d}.station-screen{background:#dbe8d2;border-radius:15px;padding:25px 10px;font-size:32px;color:#14553d}.station-screen b{display:block;font-size:17px}.station-screen small{display:block;font-size:9px;margin-top:5px}.machine-slot{margin-top:25px;background:#14553d;color:white;padding:15px;border-radius:10px;font-size:10px;font-weight:700}.machine-base{height:80px;margin:20px -5px -5px;background:#d7bd67;border-radius:10px}.split{max-width:1180px;display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.photo-card{height:350px;border-radius:30px;background:linear-gradient(135deg,#d8e7d4,#b8cfae);display:flex;flex-direction:column;justify-content:center;align-items:center;font-size:70px}.photo-card span{font-size:14px;font-weight:700}.note,.mini-note{font-size:11px!important;color:#8a7750!important;margin-top:15px}.center{text-align:center}.steps{max-width:1180px;margin:45px auto 0;display:flex;align-items:center;justify-content:center;gap:12px}.step{text-align:center;max-width:175px}.circle{width:70px;height:70px;border-radius:50%;background:#e8b72d;display:grid;place-items:center;font-size:30px;margin:auto}.step b{display:block;color:#8c6d20;margin-top:8px}.step p{font-size:12px;color:#68736b}.arrow{font-size:28px;color:#9f9a76}.station-section{max-width:none;background:#124d38;color:white}.station-intro{max-width:1180px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.station-section .eyebrow{color:#f0c13c}.station-section p{color:#d5e0d9}.location-box{margin-top:25px;padding:18px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.13);border-radius:16px;display:flex;gap:15px;align-items:center}.location-box>span{font-size:30px}.location-box div{display:flex;flex-direction:column}.location-box small{color:#d5e0d9}.station-visual{display:flex;justify-content:center}.machine{width:300px;background:#f5f1e6;border-radius:25px;padding:18px;color:#124d38;box-shadow:0 20px 50px #071d1480;border:6px solid #d4ae39}.machine-top{font-weight:800;text-align:center;padding:10px}.display{background:#dce8d5;border-radius:14px;text-align:center;padding:35px 10px;font-size:18px;font-weight:800}.slot{margin:20px auto;width:100px;height:60px;border-radius:12px;background:#124d38;color:#f1c23b;display:grid;place-items:center;font-size:30px}.machine-footer{text-align:center;font-size:9px;font-weight:700}.station-grid{max-width:1180px;margin:55px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.feature-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:25px 18px;border-radius:18px}.big-icon{font-size:30px}.feature-card p{font-size:12px;margin-top:7px}.price-box{max-width:1180px;margin:25px auto 0;background:#f1c23b;color:#173e2e;border-radius:20px;padding:22px;display:flex;justify-content:space-between;gap:20px;align-items:center}.price-box div:first-child{display:flex;flex-direction:column}.price-box strong{font-size:25px}.price-box small{font-size:10px}.examples{display:flex;gap:12px;flex-wrap:wrap}.examples span{background:#fff4c9;border-radius:10px;padding:8px 12px;font-size:11px;font-weight:700}.products{max-width:1180px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}.product{background:#fffaf0;border-radius:22px;padding:18px;box-shadow:0 8px 25px #2534270f}.product-image{height:180px;border-radius:17px;display:grid;place-items:center;font-size:75px}.candle{background:#f7df9d}.soap{background:#dce7cf}.bio{background:#ead9a9}.product p{font-size:13px;color:#657068;margin:10px 0}.impact{max-width:1180px;margin:40px auto 0;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.impact>div{background:#fffaf0;padding:28px 18px;border-radius:20px;text-align:center}.impact span{font-size:35px}.impact p{font-size:12px;color:#68736b}.flow{max-width:1180px;margin:40px auto 0;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:20px;align-items:center;text-align:center}.flow>div{background:#fffaf0;border-radius:20px;padding:25px;display:flex;flex-direction:column;gap:8px}.flow span{font-size:12px}.flow strong{font-size:30px;color:#dca923}.hub{border:2px solid #d9ae2e}.footer-contact{max-width:none;background:#124d38;color:white;display:grid;grid-template-columns:1.2fr .8fr;gap:60px;align-items:center}.footer-contact .eyebrow{color:#f0c13c}.footer-contact p{color:#d5e0d9}.contact-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:25px;font-size:13px}.contact-art{min-height:270px;border-radius:30px;background:linear-gradient(135deg,#d7e8d0,#a8c69e);color:#124d38;display:grid;place-items:center;text-align:center;font-size:90px}.contact-art small{font-size:16px;font-weight:700}footer{display:flex;justify-content:space-between;padding:22px 8%;background:#0d3b2b;color:#dce8df;font-size:12px}@media(max-width:900px){.navbar{flex-wrap:wrap}.navbar nav{order:3;width:100%;overflow:auto;justify-content:flex-start}.hero,.split,.station-intro,.footer-contact{grid-template-columns:1fr}.hero{padding-top:55px}.hero-art{min-height:400px}h1{font-size:45px}.products{grid-template-columns:1fr}.impact,.station-grid{grid-template-columns:1fr 1fr}.steps{flex-wrap:wrap}.arrow{display:none}.flow{grid-template-columns:1fr}.flow>strong{transform:rotate(90deg)}.price-box{flex-direction:column;align-items:flex-start}}@media(max-width:560px){.section{padding:65px 6%}.stats{gap:15px}.stats strong{font-size:22px}.impact,.station-grid{grid-template-columns:1fr}.contact-list{grid-template-columns:1fr}h2{font-size:34px}}
+
+</style>
+</head>
+<body>
+
+<header class="navbar">
+  <a class="brand" href="#home">🌿 JelantahKita</a>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#cara">Cara Kerja</a>
+    <a href="#station">Station</a>
+    <a href="#produk">Produk</a>
+    <a href="#dampak">Dampak</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+  <a class="nav-button" href="#station">Setor Jelantah</a>
+</header>
+
+<main>
+<section id="home" class="hero section">
+  <div>
+    <p class="eyebrow">♻️ SOLUSI LIMBAH MINYAK JELANTAH</p>
+    <h1>Ubah Jelantah,<br><span>Ciptakan Nilai.</span></h1>
+    <p class="hero-text">Kumpulkan minyak jelantah dari rumah tangga dan UMKM, setor dengan mudah melalui JelantahKita Station, lalu ubah menjadi sesuatu yang lebih bernilai.</p>
+    <div class="actions">
+      <a class="button primary" href="#station">Setor di Station →</a>
+      <a class="button secondary" href="#produk">Lihat Produk</a>
+    </div>
+    <div class="stats">
+      <div><strong>500+</strong><small>Liter Terkumpul<br><em>Data Proyeksi</em></small></div>
+      <div><strong>50+</strong><small>Mitra Rumah & UMKM<br><em>Data Proyeksi</em></small></div>
+      <div><strong>1</strong><small>Station Pengumpulan<br><em>Prototype</em></small></div>
+    </div>
+  </div>
+  <div class="hero-art">
+    <div class="station-card">
+      <div class="station-screen">🌿<br><b>JelantahKita<br>Station</b><small>Setor • Timbang • Dapatkan Nilai</small></div>
+      <div class="machine-slot">🫙 &nbsp; MASUKKAN JELANTAH</div>
+      <div class="machine-base"></div>
+    </div>
+  </div>
+</section>
+
+<section id="tentang" class="section light">
+  <div class="split">
+    <div>
+      <p class="eyebrow">TENTANG KAMI</p>
+      <h2>Dari Limbah<br>Menjadi Nilai</h2>
+      <p>JelantahKita merupakan konsep usaha pengumpulan minyak jelantah dari rumah tangga dan UMKM. Minyak yang terkumpul selanjutnya diproses dan dimanfaatkan sebagai bahan untuk berbagai produk bernilai.</p>
+      <p class="note">Prototype tugas kewirausahaan — seluruh angka dan lokasi pada website ini merupakan simulasi konsep.</p>
+    </div>
+    <div class="photo-card">🫙♻️<span>Pengumpulan minyak jelantah</span></div>
+  </div>
+</section>
+
+<section id="cara" class="section">
+  <div class="center">
+    <p class="eyebrow">CARA KERJA</p>
+    <h2>Semudah Setor Sampah,<br>Setor Jelantah.</h2>
+    <p>Pengguna dapat memilih datang langsung ke station atau menggunakan layanan pengumpulan.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="circle">🫙</div><b>01</b><h3>Kumpulkan</h3><p>Simpan minyak jelantah di rumah atau tempat usaha.</p></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="circle">📍</div><b>02</b><h3>Datang</h3><p>Bawa ke JelantahKita Station.</p></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="circle">⚖️</div><b>03</b><h3>Timbang</h3><p>Jumlah setoran dihitung oleh sistem.</p></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="circle">💰</div><b>04</b><h3>Dapatkan Nilai</h3><p>Nilai setoran masuk sebagai saldo pengguna.</p></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="circle">♻️</div><b>05</b><h3>Diolah</h3><p>Jelantah dikumpulkan untuk proses selanjutnya.</p></div>
+  </div>
+</section>
+
+<section id="station" class="section station-section">
+  <div class="station-intro">
+    <div>
+      <p class="eyebrow">JELANTAHKITA STATION</p>
+      <h2>Setor Jelantah,<br>Dapatkan Nilainya.</h2>
+      <p>Bawa minyak jelantah ke station terdekat. Untuk prototype ini, JelantahKita Station ditempatkan di <b>Alfamart Ciwaruga</b>.</p>
+      <div class="location-box">
+        <span>📍</span><div><b>Lokasi Prototype</b><small>Alfamart Ciwaruga</small></div>
+      </div>
+      <p class="mini-note">*Lokasi ini merupakan simulasi konsep dan bukan informasi kerja sama resmi.</p>
+    </div>
+    <div class="station-visual">
+      <div class="machine">
+        <div class="machine-top">🌿 JELANTAHKITA</div>
+        <div class="display">MASUKKAN<br>MINYAK JELANTAH</div>
+        <div class="slot">▣</div>
+        <div class="machine-footer">SCAN / TIMBANG / SALDO</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="station-grid">
+    <div class="feature-card">
+      <span class="big-icon">⚖️</span>
+      <h3>1. Timbang</h3>
+      <p>Station menghitung berat minyak yang disetorkan.</p>
+    </div>
+    <div class="feature-card">
+      <span class="big-icon">💰</span>
+      <h3>2. Hitung Nilai</h3>
+      <p>Berat minyak dikonversi menjadi nilai setoran sesuai harga yang berlaku.</p>
+    </div>
+    <div class="feature-card">
+      <span class="big-icon">📱</span>
+      <h3>3. Masuk Saldo</h3>
+      <p>Nilai setoran tercatat sebagai saldo akun pengguna.</p>
+    </div>
+    <div class="feature-card">
+      <span class="big-icon">♻️</span>
+      <h3>4. Diproses</h3>
+      <p>Minyak dikumpulkan untuk diolah lebih lanjut menjadi produk bernilai.</p>
+    </div>
+  </div>
+
+  <div class="price-box">
+    <div><span>Contoh nilai setoran</span><strong>Rp5.000 / kg</strong><small>Simulasi untuk prototype</small></div>
+    <div class="examples"><span>1 kg → Rp5.000</span><span>5 kg → Rp25.000</span><span>10 kg → Rp50.000</span></div>
+  </div>
+</section>
+
+<section id="produk" class="section light">
+  <div class="center">
+    <p class="eyebrow">PRODUK KAMI</p>
+    <h2>Jelantah yang Kembali Bernilai</h2>
+  </div>
+  <div class="products">
+    <article class="product"><div class="product-image candle">🕯️</div><h3>Lilin</h3><p>Salah satu contoh pemanfaatan minyak jelantah yang telah melalui proses pengolahan sesuai kebutuhan.</p></article>
+    <article class="product"><div class="product-image soap">🧼</div><h3>Sabun</h3><p>Minyak yang telah diproses dapat dimanfaatkan sebagai bahan dalam pembuatan produk sabun.</p></article>
+    <article class="product"><div class="product-image bio">⚡</div><h3>Biodiesel</h3><p>Minyak jelantah dapat diproses lebih lanjut menjadi bahan baku biodiesel melalui proses yang sesuai.</p></article>
+  </div>
+</section>
+
+<section id="dampak" class="section">
+  <div class="center">
+    <p class="eyebrow">DAMPAK</p>
+    <h2>Bersama Mengurangi Limbah</h2>
+  </div>
+  <div class="impact">
+    <div><span>♻️</span><h3>Mengurangi Limbah</h3><p>Mengurangi pembuangan minyak jelantah secara sembarangan.</p></div>
+    <div><span>🌱</span><h3>Peduli Lingkungan</h3><p>Mendorong pemanfaatan kembali limbah minyak.</p></div>
+    <div><span>💰</span><h3>Nilai Ekonomi</h3><p>Mengubah limbah menjadi sesuatu yang memiliki nilai.</p></div>
+    <div><span>🤝</span><h3>Libatkan UMKM</h3><p>Membangun ekosistem pengumpulan bersama masyarakat dan UMKM.</p></div>
+  </div>
+</section>
+
+<section class="section light">
+  <div class="center">
+    <p class="eyebrow">ALUR BISNIS</p>
+    <h2>Dari Masyarakat → Station → Produk</h2>
+  </div>
+  <div class="flow">
+    <div><b>Sumber Jelantah</b><span>🏠 Rumah Tangga</span><span>🍜 Warung</span><span>🏪 UMKM</span><span>🍽️ Restoran</span></div>
+    <strong>→</strong>
+    <div class="hub"><b>🌿 JelantahKita</b><small>Station & Pengolahan</small></div>
+    <strong>→</strong>
+    <div><b>Produk Bernilai</b><span>🕯️ Lilin</span><span>🧼 Sabun</span><span>⚡ Biodiesel</span></div>
+  </div>
+</section>
+
+<section id="kontak" class="section footer-contact">
+  <div>
+    <p class="eyebrow">KONTAK</p>
+    <h2>Mari Bersama Mengubah<br>Jelantah Menjadi Nilai.</h2>
+    <p>Hubungi kami untuk informasi penyetoran, kerja sama, atau konsep JelantahKita Station.</p>
+    <div class="contact-list">
+      <span>📱 +62 812-3456-7890</span>
+      <span>📷 @jelantahkita</span>
+      <span>✉️ jelantahkita@gmail.com</span>
+      <span>📍 Alfamart Ciwaruga — Prototype</span>
+    </div>
+  </div>
+  <div class="contact-art">🌱<br><small>Lebih sedikit limbah,<br>lebih banyak nilai.</small></div>
+</section>
+</main>
+
+<footer><b>🌿 JelantahKita</b><span>© 2026 Prototype Kewirausahaan</span></footer>
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(link=>{link.addEventListener('click',e=>{const t=document.querySelector(link.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}});});
+</script>
+</body>
+</html>
